@@ -10,31 +10,18 @@ class App extends Component {
     super();
 
     this.state = {
-      name: {firstName: 'Surbhi', lastName: 'Vandana'}, 
-      company: 'ZTM',
+      monsters: [],
     };
   }
 
   render() {
     return (
       <div className="App">
-          <header className='App-header'>
-            <p>
-              Hi {this.state.firstName} {this.state.name.lastName}, I work at {this.state.company}
-            </p>
-            <button 
-              onClick={() => {
-                this.setState((state, props) => {
-                  return {
-                    name: {firstName: 'Andrei', lastName: 'Neaogie'},
-                  }
-                }, () => {});
-                // console.log(this.state);
-                //swallow merge the current state and give the state
-              }}
-              >
-              Change Name</button>
-          </header>
+        {
+          this.state.monsters.map((monster) => {
+            return <div key={monster.id}><h1>{monster.name}</h1></div>;
+          })
+         }
       </div>
     );
   }

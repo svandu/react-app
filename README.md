@@ -1,1 +1,2 @@
 # react-app
+#install dependencies 

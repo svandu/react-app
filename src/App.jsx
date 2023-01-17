@@ -38,7 +38,7 @@ class App extends Component {
           type="search"
           placeholder="search monsters"
           onChange={(event) => {
-            console.log({statrtinArray: this.state.monsters});
+            console.log({starting: this.state.monsters});
             const searchString = event.target.value.toLocaleLowerCase();
             //[ { name: 'Leanne'}, {name: 'Yihua'}]
             const filteredMonsters = this.state.monsters.filter((monster) => {

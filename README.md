@@ -14,4 +14,4 @@ $ npm build
 $ npm start 
 ```
 
-For detailed explanation on how things work, check out the[documentation](https://reactjs.org/).
+For detailed explanation on how things work, check out the [documentation](https://reactjs.org/).

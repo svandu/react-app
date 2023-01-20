@@ -15,3 +15,7 @@ $ npm start
 ```
 
 For detailed explanation on how things work, check out the [documentation](https://reactjs.org/).
+
+# Special Directories 
+
+You can create the following extra directories, some of which have special behaviours. Only `pages` is required, you can delete them if you don't want to use their functionality.
